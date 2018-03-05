@@ -1,4 +1,7 @@
 def plot_airport(airport_name):
+    '''
+    Input an airport code, such as 'LAX'
+    '''
     x = file_in('902103314_112017_5253_airline_delay_causes.csv')
     clean_data = data_clean(x)
     data = find_delay_flight(clean_data,month = 3,airport = airport_name)
